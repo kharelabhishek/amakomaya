@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kharelabhishek.github.io/amakomaya/",
   "name": "amakomaya-website",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "bootstrap": "^5.0.1",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "node-forge": "^0.10.0",
     "popper.js": "^1.16.1",
@@ -19,7 +21,7 @@
     "react-google-charts": "^3.0.15",
     "react-nepal-map": "^1.0.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "react-slick": "^0.28.1",
     "react-spring": "^9.2.3",
     "react-transition-group": "^4.4.2",
@@ -30,6 +32,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
